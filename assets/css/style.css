@@ -1,0 +1,151 @@
+/*--------------------------*/
+/* COLORS */
+/*-
+
+mainGrey: rgba(255, 255, 255, 0.767)
+
+
+-------------------------*/
+
+
+
+
+
+
+
+
+/*--------------------------*/
+/* BASIC SETUP */
+/*--------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#ccc;
+    color: #000;
+    font-family: 'Arimo', sans-serif; 
+    font-size:16px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*--------------------------*/
+/* REUSABLE ELEMENTS */
+/*--------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*--------------------------*/
+/* HEADINGS */
+/*--------------------------*/
+
+h1{
+    color: #fff;
+    margin:0;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+h3{
+    color: rgba(255, 255, 255, 0.767);
+    font-weight: 100 ;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 180%;
+    letter-spacing: 1px;
+
+}
+/*--------------------------*/
+/* HEADER */
+/*--------------------------*/
+
+header{
+    background-image:linear-gradient(rgba(100, 96, 75, 0.651),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    height:30px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.hero-text-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1140px;
+}
+
+.main-nav{
+    margin: 60px 0px 50px 0px;
+    
+    list-style:none;
+    float: right;
+    color:rgba(255, 255, 255, 0.767);
+    letter-spacing: 0.5px;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    margin-left: 40px;
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.hamburger{
+    transition: all 0.5s;
+}
+
+.hamburger:hover{
+    color:#2CB5A7;
+}
+
+.link-container{
+    position:absolute;
+    bottom: 10vh;
+}
+
+.link-container a{
+    color:#fff;
+    transition: all .8s;
+}
+
+.link-container a:hover{
+    margin-left: 20px;
+}
+
+.link-container a:link,
+.link-container a:visited{
+    text-decoration: none;
+    
+
+}
+
+
+
+.link-container a:before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
