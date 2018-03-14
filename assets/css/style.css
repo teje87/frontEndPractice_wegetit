@@ -76,7 +76,7 @@ header{
 .logo{
     height:30px;
     width: auto;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .hero-text-box{
@@ -107,13 +107,6 @@ header{
     transition: all 0.5s;
 }
 
-.hamburger{
-    transition: all 0.5s;
-}
-
-.hamburger:hover{
-    color:#2CB5A7;
-}
 
 .link-container{
     position:absolute;
@@ -148,4 +141,12 @@ header{
     margin-right: 15px;
 }
 
+.hamburger-inner:before,
+.hamburger-inner:after,
+.hamburger-inner{
+    background-color: #2CB5A7;
+    width:30px;
+    height: 4px;
+    z-index: 10;
+}
 
