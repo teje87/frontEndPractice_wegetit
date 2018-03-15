@@ -8,6 +8,30 @@ $( document ).ready(function() {
         });
       });
 
+
+
+      //SWIPER
+
+      var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        centeredSlides:true,
+        spaceBetween:20,
+        grabCursor:true,
+        speed:800,
+
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+
+        //FADE
+        fadeEffect: {
+          crossFade: true
+        },
+    
+      })
 });
 
 
