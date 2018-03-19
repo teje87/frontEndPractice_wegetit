@@ -5,6 +5,7 @@ $( document ).ready(function() {
         $(".hamburger--collapse").click(function() {  //use a class, since your ID gets mangled
           $(this).toggleClass("is-active");      //add the class to the clicked element
           $(".fs-menu").toggleClass("fs-menu-active");
+          $('section').toggle(); 
         });
       });
 
@@ -32,6 +33,20 @@ $( document ).ready(function() {
         },
     
       })
+
+      
+
+
+      //STICKY HEADER 
+
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 200) {
+          $('.sticky-header').addClass('fixed');
+         }
+         else {
+          $('.sticky-header').removeClass('fixed');
+         }
+      });
 });
 
 

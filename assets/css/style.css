@@ -42,6 +42,11 @@ html{
     margin: 0 auto;
 }
 
+.section-wraper{
+    height: 100vh;
+    background-color: aquamarine;
+}
+
 /*--------------------------*/
 /* HEADINGS */
 /*--------------------------*/
@@ -60,8 +65,8 @@ h3{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 180%;
     letter-spacing: 1px;
-
 }
+
 /*--------------------------*/
 /* HEADER */
 /*--------------------------*/
@@ -77,6 +82,7 @@ header{
     height:30px;
     width: auto;
     margin-top: 70px;
+    z-index: 3;
 }
 
 .hero-text-box{
@@ -124,8 +130,6 @@ header{
 .link-container a:link,
 .link-container a:visited{
     text-decoration: none;
-    
-
 }
 
 .link-container a:before{
@@ -152,6 +156,35 @@ header{
     z-index: 10;
 }
 
+/*-------STICKY-------*/
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    background-color: #fff;
+}
+
+.fixed .main-nav li a{
+    color: #000;
+}
+
+.sticky-header.fixed {
+    height: 10%;
+    z-index: 10;
+}
+
+.sticky-header.fixed .row{
+    transform: translateY(-30%);
+}
+
+.fixed .hamburger-inner:before,
+.fixed .hamburger-inner:after,
+.fixed .hamburger-inner{
+    background-color: #000;
+} 
+
+
+
 /*--------------------------*/
 /* SWIPER */
 /*--------------------------*/
@@ -176,8 +209,12 @@ header{
 }
 
 #bg-fs-logo{
+    z-index: 0;
+    position: absolute;
     opacity:0.1;
-    z-index:2;
+    width: 500%;
+    top:-200px;
+    height: auto;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -191,6 +228,7 @@ header{
 
 .swiper-slide{
     text-align: center;
+
     
 }
 
@@ -202,5 +240,7 @@ header{
     transform: translate(-50%,-50%);
     font-size: 1000%;
 }
+
+
 
 
