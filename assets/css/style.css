@@ -8,12 +8,6 @@ mainGrey: rgba(255, 255, 255, 0.767)
 -------------------------*/
 
 
-
-
-
-
-
-
 /*--------------------------*/
 /* BASIC SETUP */
 /*--------------------------*/
@@ -33,6 +27,15 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+a:link,
+a:visited{
+    text-decoration: none;
+    text-decoration: none;
+    color:#000;
+    transition: all 0.5s;
+}
+
+
 /*--------------------------*/
 /* REUSABLE ELEMENTS */
 /*--------------------------*/
@@ -45,6 +48,7 @@ html{
 .section-wraper{
     height: 100vh;
     background-color: aquamarine;
+    position: relative;
 }
 
 /*--------------------------*/
@@ -239,6 +243,35 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 1000%;
+}
+
+/*--------------------------*/
+/* ABOUT */
+/*--------------------------*/
+
+.about-heading{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.about-heading h1{
+    color: #000;
+    font-weight: 500;
+    font-size: 280%;
+    letter-spacing: 1px;
+}
+
+.about-heading span{
+    font-weight: 900;
+}
+
+.about-services-link{
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%);
 }
 
 
