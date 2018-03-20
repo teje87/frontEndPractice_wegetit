@@ -10,6 +10,12 @@ $( document ).ready(function() {
       });
 
 
+      //TEAM BG SCRIPT
+
+      $(".worker-list li").hover(function() {
+        $this = $(this);
+        $(".about-us-section").css("background-image", "url(" + $(this).data("bg") + ")");
+      });
 
       //SWIPER
 
