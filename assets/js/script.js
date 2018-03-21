@@ -48,10 +48,10 @@ $( document ).ready(function() {
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 200) {
           $('.sticky-header').addClass('fixed');
-         }
-         else {
-          $('.sticky-header').removeClass('fixed');
-         }
+        }
+        else {
+        $('.sticky-header').removeClass('fixed');
+        }
       });
 });
 
